@@ -1,0 +1,702 @@
+nav.navbar.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	width: 100%;
+	.btn-default {
+		background-color: gray;
+		color: white;
+		border-radius: 25px;
+		margin-top: -7px;
+	}
+	.navbar-toggle {
+		float: left;
+	}
+	.btn.btn-default.crear-perfil {
+		float: right;
+		background-color: $naranja;
+		border-color: $naranja;
+		margin: 7px;
+		font-size: 12px;
+	}
+	li {
+	  font-size: 18px;
+	}
+	select.opciones {
+	  margin: 14px 0px;
+	  border-radius: 7px;
+	  color: gray;
+	}
+}
+
+
+@media screen and (min-width: 480px) {
+	.crear-perfil {
+		visibility: hidden;
+	}
+}
+
+/*POP AP*/
+.modal-backdrop.fade.in {
+  background-color: rgb(211, 210, 210);
+  opacity: 0.8;
+}
+.modal-dialog {
+  z-index: 2000;
+  width: 40%;
+  margin: 100px auto;
+  .modal-content.inicial {
+	  border: 6px solid gainsboro;
+	  padding: 30px 60px;
+	  border-radius: 21px;
+	  .modal-header.uno {
+  		border-bottom: none;
+  		background: none;
+			h2#myModalLabel {
+			  text-align: center;
+			  color: deepskyblue;
+			  letter-spacing: 1px;
+			}
+		}
+		.modal-body {
+			button.btn.btn-primary {
+			  border-radius: 14px;
+			  background-color: deepskyblue;
+			  border: deepskyblue;
+			  padding: 10px 30px;
+			}
+			a {
+			  color: darkgray;
+			}
+			a:hover {
+			  text-decoration: none;
+			  color: deepskyblue;
+			}
+		}
+		.modal-footer {
+		  border-top: none;
+		}
+	}
+}
+
+
+/*SECCIONES*/
+
+/*--SECCIONES PORTADA--*/
+#portada {
+	background-image: url(../assets/img/img-home.png);
+	background-size: cover;
+	height: 100%;
+	display: table;
+  	width: 100%;
+  .row {
+	  text-align: right;
+	  vertical-align: middle;
+	  display: table-cell;
+	}
+	h3 {
+		color: $celeste;
+		padding: 4% 0px;
+	}
+	h4 {
+		color: $gris;
+		line-height: 1.4;
+		font-weight: 300;
+	}
+	.btn.btn-default {
+	  background-color: $naranja;
+	  border-color: $naranja;
+	  color: white;
+	  padding: 12px 14px;
+	  width: 42%;
+	  border-radius: 14px;
+	  margin: 21px;
+	}
+	img.hidden-lg.hidden-md {
+	  width: 100%;
+	}
+}
+
+/*--SECCIONES METODOLOGÍA--*/
+#metodologia {
+	.container.text-center {
+	  padding-top: 0px;
+	}
+	.flecha.arriba.hidden-xs {
+	  top: -30px;
+	  width: 100%;
+	  position: relative;
+	}
+	h1 {
+		color: $celeste;
+	}
+	h3 {
+		color: $gris;
+		font-size: 27px;
+		span {
+			color: $naranja;
+		}
+		img.comilla1, img.comilla2 {
+		  position: relative;
+		  bottom: 14px;
+		}
+		img.comilla2 {
+		  top: 14px;
+		}
+	}
+	.analisis {
+	  padding: 42px 65px;
+	}
+	.overlay{
+	  border: 2px dashed tomato;
+	  border-radius: 50%;
+	  height: 400px;
+	  width: 400px;
+	  margin: 0 auto;
+	  padding: 60px;
+	  h4 {
+	  	color: $gris;
+	  }
+	}
+	.circulo-grande {
+	  	background-color: #ff4016;
+		border-radius: 50%;
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		padding: 4px;
+		position: absolute;
+		top: 0;
+	    right: 50px;
+	  	.circulo {
+			border-radius: 50%;
+			border: 2px dashed white;
+			width: 100%;
+			height: 100%;
+			padding: 81px;
+			h4 {
+				color: white;
+				line-height: 1.2;
+			}
+		}
+	}
+	.pilares,.analisis {
+	 	h3 {
+			color: $naranja;
+		}
+		h4 {
+			color: $gris;
+			padding: 11px;
+		}
+	}
+	.pilares {
+	 	padding-top: 210px;
+	}
+	.btn-contactos-celeste {
+		padding: 14px 49px;
+  	font-size: 21px;
+  	background-color:$celeste;
+  	border-color: white;
+  	border-radius: 30px;
+	}
+	.flecha.text-center {
+  	bottom: -77px;
+  }
+}
+	/*lineas que salen del circulo grande*/
+	.izquierda, 
+	.centro, 
+	.derecha {
+		border: 2px dashed $naranja;
+		position: relative;
+	}
+
+	.izquierda, .derecha {
+		height: 169px;
+	  top: 56px;
+	}
+	.izquierda {
+	  transform: rotate(-111deg);
+	  float: right;
+	}
+	.derecha {
+	  transform: rotate(111deg);
+	  float: left;
+	}
+	.centro {
+	  transform: rotate(90deg);
+	  width: 98px;
+  	  top: 32px;
+	}
+
+/*--SECCIONES POSTULANTES--*/
+#postulante {
+	background-image: url(../assets/img/img-02.png);
+	background-size: cover;
+	h1, h3, h2, h4 {
+		color: white;
+	}
+	.col-md-4 {
+		.potencial {
+		  position: relative;
+		}
+		.circle {
+		  float: right;
+			left: 111px;
+			position: relative;
+			bottom: 20px;
+			z-index: 1;
+		  img {
+		  	border-radius: 50%;
+		  	width: 80%;
+		  }
+		}
+		.subtitulo {
+		  padding-bottom: 1px;
+		  border-bottom: 2px dashed white;
+		  h3 {
+		  	margin-top: 0px;
+		  	font-size: 23px;
+		  }
+		}
+	}
+	.col-md-4.li {
+	  border-left: 2px dashed white;
+	  	.informacion {
+		  	padding: 28px 0px 90px 70px;
+		}
+	}
+	.btn-contactos-celeste {
+		padding: 14px 49px;
+  	font-size: 21px;
+  	background-color:$celeste;
+  	border-color: white;
+  	border-radius: 30px;
+	}
+	.flecha.text-center {
+  		bottom: -84px;
+  }
+}
+
+/*--SECCIONES FAROLITO EMPRESA--*/
+#empresa {
+	h1 {
+		color: $naranja;
+	}
+	h3.border {
+		color: $gris;
+		border-bottom: 2px dashed $naranja;
+		padding-bottom: 21px;
+		margin-top: 28px;
+	}
+	h4,h3 {
+		color: $gris;
+	}
+	strong {
+		color: $celeste;
+	}
+	.flecha.text-center {
+		bottom: -77px;
+	}
+}
+
+/*--SECCIONES FAROLITO CENTROS EDUCATIVOS--*/
+#centros-educativos {
+	background-color: $verde-limon;
+	h1 {
+		color: white;
+	}
+	h3.border {
+		color: $amarillo;
+		border-bottom: 2px dashed white;
+		padding-bottom: 21px;
+		margin-top: 28px;
+	}
+	h4,h3 {
+		color: white;
+	}
+	strong {
+		color: $celeste;
+	}
+	.img-circular {
+		border-radius: 50px;
+	}
+	.flecha.text-center {
+		bottom: -77px;
+	}
+}
+
+/*--SECCIONES OPORTUNIDADES--*/
+#oportunidades {
+	background-image: url(../assets/img/img-oportunidades-24.png);
+	background-size: cover;
+	.container {
+		padding: 42px 145px 63px;
+	}
+	.cuadro {
+		background-color: white;
+		padding: 35px 91px;
+		h1.text-center {
+		  color: $gris;
+		}
+	}
+	.servicio {
+	  	border-bottom: 1px dashed $gris;
+	  	margin: 35px 0px;
+	  	h4 {
+			color: $celeste;
+		}
+		ul {
+			list-style: none;
+			padding: 0px;
+			color: $gris;
+			line-height: 1.8;
+			margin-bottom: 35px;
+		}
+		.btn-vermas {
+		  background-color: white;
+		  color: $naranja;
+		  border-color: $naranja;
+		  border-radius: 30px;
+		  float: right;
+		  position: relative;
+	  	bottom: 56px;
+		}
+	}
+	.btn-vertodos {
+	  position: relative;
+	  background: gray;
+	  border-color: gray;
+	}
+	.flecha.text-center {
+  		bottom: -133px;
+  	}
+}
+
+/*--SECCIONES BLOG--*/
+#blog {
+	.container.text-center, .container {
+	  padding: 56px 84px 42px;
+	}
+	h1 {
+		color: $gris;
+	}
+	.grid-blog {
+		padding-top: 70px;
+		.background {
+			img {
+				border-radius: 50px;
+				position: relative;
+				bottom: 42px;
+			}
+			.comentario {
+			  text-align: left;
+			  padding: 20px;
+			  position: relative;
+			  bottom: 24px;
+			  line-height: 1.6;
+			}
+		}
+	}	
+	.flecha.text-center {
+  	bottom: -77px;
+  }
+}
+
+/*Efecto hover del Blog*/
+.background {
+	background-color: $gris-claro;
+}
+
+.background:hover {
+  background-color: $mostaza;
+  .comentario {
+  	color: white;
+  }
+}
+
+/*--SECCIONES CONTACTOS--*/
+#contactos {
+	background-color: $gris-claro;
+	h1 {
+		color: $gris;
+	}
+	.formulario {
+		padding-top: 35px;
+		input, textarea {
+			margin-bottom: 21px;
+			font-size: 18px;
+			color: $gris-claro;
+			padding: 16px;
+ 			border-radius: 0px;
+		}
+		.btn-vertodos {
+		  position: relative;
+		  background: gray;
+		  border-color: gray;
+		}
+		.llamanos {
+			color: $gris;
+			padding: 21px 0px;
+		}
+	}
+}
+
+/*--SECCIONES FOOTER--*/
+footer {
+	background-color: $gris;
+	ul {
+		list-style: none;
+		bottom: 14px;
+  	position: relative;
+  	display: inline-block;
+		li {
+			float: left;
+			img {
+				border-radius:50px;
+				margin: 0px 7px;
+				border: 2px solid white;
+			}
+		}
+	}
+	.derechos-reservados {
+	  position: relative;
+		float: right;
+		color: white;
+		padding: 14px;
+	}
+}
+
+/*MEDIA*/
+@media screen and (max-width: 480px) {
+	.container.text-center, .container {
+	  padding: 0px 28px !important;
+	  padding-top: 14px !important;
+	}
+
+	#portada {
+		background-image: none;
+		background-color: aliceblue;
+		height: 0px;
+		.centrar { 
+			padding:  0px;
+			h3 {
+				padding: 0px 70px;
+			}
+			h4 {
+				padding: 18px 49px;
+			}
+			img.logo {
+	  		padding-top: 81px;
+			}
+		}
+	}
+
+	#metodologia {
+		.izquierda, /*lineas del circulo - ahora horizontales*/
+		.centro, 
+		.derecha {
+			border: 1px dashed $naranja;
+			position: relative;
+			width: 80%;
+		}
+		.izquierda {
+		  transform: rotate(0deg);
+		  float: none;
+		  height: 0px;
+		  top: 0px;
+		}
+		.derecha {
+		  transform: rotate(0deg);
+		  float: none;
+		  height: 0px;
+		  top: 0px;
+		}
+		.centro {
+		  transform: rotate(0deg);
+		  width: 80%;
+		  top: 0px;
+		}
+		.pilares {
+		 	padding-top: 0px;
+		}
+		.analisis {
+			padding: 0px;
+		}
+		.row.m-0.text-center.pt {
+  		padding-top: 0px;
+		}
+	}
+
+	#postulante {
+		background-image: url(../assets/img/img-02.png);
+		h1, h3, h2, h4 {
+			color: white;
+			h1 {
+				padding: 0px 70px;
+			}
+		}
+		.col-md-2.text-right {
+		  text-align: center;
+		  .numero {
+	  		padding-bottom: 21px;
+		  	img {
+		  	  width: 14%;
+			  	position: relative;
+		  	}
+			}
+		}
+		/*Esta es la columna de la izquierda*/
+		.col-md-4 {
+			.potencial {
+		 		position: initial;
+			}
+			.circle {	
+		    float: none;
+				left: 0px;
+				position: initial;
+				bottom: 0px;
+				z-index: 1;
+				text-align: center;
+		 		img {
+		  	  border-radius: 50%;
+		  	  width: 25%;
+		  	}
+			}
+			.circle.pt-42.circulo2,
+			.circle.pt-42.circulo3 {
+			  margin-top: -45px;
+			}
+			.circle, 
+			.circulo2,
+			.circulo3 {
+				padding-bottom: 14px;
+			}
+			.subtitulo {
+		 	 	padding-bottom: 1px;
+		  	border-bottom: 2px dashed white;
+		  	text-align: center;
+		  	h3 {
+		  		padding: 0px 25px;
+		  	}
+			}
+		}
+		/*Esta es la columna de la derecha*/
+		.col-md-4.li { 
+		  border-left: none;
+		  margin-bottom: 49px;
+		  .informacion {
+			  padding: 0px;
+			  text-align: center;
+			}
+		}
+	}
+
+	#empresa {
+		.titulo {
+			h3 {
+				color: $naranja;
+			}
+		}
+	}
+	/*clases iguales en empresa - centro-educativos*/
+	.border {
+		padding-left: 42px;
+		padding-right: 42px;
+	}
+	.btn-contactos {
+		margin-top: 0px;
+	}
+
+	#centros-educativos {
+		h1 {
+			padding: 0px 63px;
+		}
+	}
+
+	#blog {
+		.container {
+			padding: 0px;
+		}
+		.background {
+			background-color: initial;
+			.comentario {
+				text-align: center;
+			}
+		}
+		.btn-contactos-celeste {
+			margin-top: -35px;
+		}
+	}
+
+	#contactos {
+		.formulario {
+			padding: 21px 42px;
+			input, textarea {
+				text-align: center;
+			}
+			button.btn.btn-danger.btn-vertodos {
+			  width: 100%;
+			  border-radius: 14px;
+			  font-size: 16px;
+			  padding: 14px;
+			  margin: 7px 0px 14px;
+			}
+			p {
+				font-size: 19px;
+			}
+		}
+		.boton.text-right, .llamanos {
+  		text-align: center;
+		}
+	}
+
+	.btn-contactos, .btn-contactos-celeste {
+	  margin-bottom: 56px;
+	}
+	footer {
+		.container-fluid {
+			text-align: center;
+			.derechos-reservados {
+  			float: inherit;
+  			padding: 0px;
+			}
+			ul.iconos-redes.clearfix {
+  			padding-right: 40px;
+			}
+		}
+	}
+	/*ESTILOS DEL NAV-RESPONSIVE*/
+	nav {
+		position: fixed !important;
+	  z-index: 1000;
+	  height: 100%;
+	  .container-fluid {
+		  height: 100%;
+		  .navbar-header {
+			  background: $navbar !important;
+			}
+		  div#bs-example-navbar-collapse-1 {
+			  background: $celeste;
+			  height: 100%;
+			  text-align: center;
+			  ul{
+			  	li{
+		  			padding: 20px;
+		  			border-bottom: 2px dashed white;
+		  			font-size: 24px;
+		  			a {
+		  				color: white;
+
+		  			}
+		  			a:hover {
+		  				color: $celeste;
+		  			}
+			  	}
+			  	li:hover {
+			  		background: white;
+			  	}
+			  }
+			}
+		}
+	}
+}

@@ -1,0 +1,151 @@
+nav{
+	position: fixed;
+	z-index: 2000;
+}
+nav.navbar.navbar-default.fixed {
+  position: fixed;
+  background-color: $navbar;
+  border-radius: 0px;
+  .navbar-brand {
+  	margin-left: 14px;
+  }
+  .btn-default {
+	  background-color: gray;
+	  color: white;
+	  border-radius: 25px;
+	  margin-top: -3px;
+	  padding: 5px 31px;
+	} 
+}
+
+#sobre-nosotros{
+	background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	h1, h4 {
+		color: white;
+	}
+	.flecha.text-center {
+	  bottom: -145px;
+	}
+	.somos {
+ 		padding: 30px 280px;
+	}
+}
+#fundadores, #asesores, #committe {
+	.container.text-center, .container {
+	  padding: 0px 84px 0px;
+	}
+	h1,h3,h4 {
+		color: $gris;
+	}
+	.foto {
+	  border-radius: 50%;
+	  border: 1px solid gray;
+	  padding: 4px;
+	  display: inline-block;
+	  img {
+	  	border-radius: 50%;
+	  	width: 100%;
+	  }
+	}
+	.nombre-cargo {
+	  padding-bottom: 7px;
+	  h3 {
+	  	color: $celeste;
+	  	font-weight: 600;
+	  }
+	}
+	.parrafo {
+		padding: 0px 14px;
+	}
+}
+
+.linea-separacion {
+	hr {
+	border: 2px dashed $gris;
+	}
+  	padding: 0px 156px;
+ }
+
+.linea-estilo {
+	hr {
+	border: 2px dashed white;
+	}
+	padding: 0px 300px;
+}
+
+#motivacion {
+	background-color: $tomate;
+	h3, h4 {
+		color: white;
+	}
+	h4 {
+		padding: 14px 0px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	nav .container-fluid div#bs-example-navbar-collapse-1 {
+  background: #58C6E7;
+  height: initial;
+  text-align: center;
+}
+	nav.navbar.navbar-default.fixed {
+	  position: fixed;
+	  background-color: none;
+	  border-radius: 0px;
+	  height: 0px;
+	  .navbar-header {
+  		background: none;
+		}
+		.navbar-brand {
+	  	padding: 4px 0px 0px 70px;
+		}
+		.navbar-default .navbar-toggle {
+  		border-color: none;
+		}
+	}
+
+	#sobre-nosotros {
+		background-image: url(../assets/img/nosotros.jpg);
+		height: 70%;
+		h4 {
+			padding: 7px 49px;
+		}
+		.somos {
+			padding: 0px;
+			position: relative;
+  		top: 40px;
+		}
+	}
+
+	#fundadores {
+		padding-top: 0px;
+		padding-bottom: 21px;
+		.mb {
+			margin-bottom: 12px;
+		}
+		.pt {
+			padding-top: 0px;
+		}
+		.foto {
+			width: 120px;
+		}
+	}
+	.linea-estilo, .linea-separacion {
+		padding: 0px;
+	}
+	#motivacion {
+		padding-top: 42px;
+		padding-bottom: 42px;
+		.linea-estilo,
+		h3 {
+			padding: 0px 49px;
+		}
+		h4 {
+		  padding: 20px 42px;
+		}
+	}
+}
